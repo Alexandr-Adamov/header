@@ -70,7 +70,7 @@
 
             background: #ffcc00;
             border-radius: 100px;
-            background-image: url(../../images/search.svg);
+            background-image: url("/images/search.svg");
             background-size: auto;
             background-repeat: no-repeat;
             border: none;
@@ -103,7 +103,7 @@
             content: "";
             width: 9px;
             height: 6px;
-            background-image: url("../../images/arrow.svg");
+            background-image: url("/images/arrow.svg");
         }
     }
 }
@@ -126,7 +126,7 @@
             content: "";
             width: 20px;
             height: 13px;
-            background-image: url("../../images/eyes.svg");
+            background-image: url("/images/eyes.svg");
         }
     }
 }
@@ -149,7 +149,7 @@
         content: "";
         width: 26px;
         height: 24px;
-        background-image: url("../../images/square.svg");
+        background-image: url("/images/square.svg");
     }
 }
 
@@ -167,7 +167,7 @@
         content: "";
         width: 29px;
         height: 29px;
-        background-image: url("../../images/user.svg");
+        background-image: url("/images/user.svg");
     }
     &__setting {
         font-size: 13px;
@@ -180,7 +180,7 @@
     content: "";
     width: 25px;
     height: 24px;
-    background-image: url("../../images/star.svg");
+    background-image: url("/images/star.svg");
     margin-right: 22px;
 }
 
@@ -190,7 +190,7 @@
     content: "";
     width: 28px;
     height: 24px;
-    background-image: url("../../images/cart.svg");
+    background-image: url("/images/cart.svg");
     position: relative;
     &:after {
         content: "13";
