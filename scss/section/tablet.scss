@@ -1,0 +1,131 @@
+.burger{
+    &-menu {
+        border: 1px solid #dddddd;
+        width: 87%;
+        padding: 15px;
+        border-radius: 10px;
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+    &_btn {
+    width: 21px;
+    height: 7px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    left: 35px;
+    top: 0;
+}}
+
+
+.burger-button {
+    display: flex;
+    justify-content: center;
+    min-width: 20px;
+    border: 1.5px solid black;
+    background-color: black;
+    position: relative;
+    &::before {
+        content: "";
+        width: 20px;
+        border: 1.5px solid black;
+        background-color: black;
+        position: absolute;
+        bottom: 5px;
+    }
+    &::after {
+        content: "";
+        width: 20px;
+        border: 1.5px solid black;
+        background-color: black;
+        position: absolute;
+        top: 4.5px;
+    }
+}
+
+.burger-button--open {
+    width: 0;
+    border: 0;
+    &::after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: 1s;
+    }
+    &::before {
+        top: 0;
+        transform: rotate(-45deg);
+        transition: 1s;
+    }
+}
+
+.arrow {
+    width: 27px;
+    height: 3px;
+    background-color: #dddddd;
+    position: relative;
+    &::before {
+        content: "";
+        width: 8px;
+        border: 1.5px solid #dddddd;
+        background-color: #dddddd;
+        position: absolute;
+        transform: rotate(32deg);
+        bottom: 2px;
+        right: 1px;
+    }
+    &::after {
+        content: "";
+        content: "";
+        width: 8px;
+        border: 1.5px solid #dddddd;
+        background-color: #dddddd;
+        position: absolute;
+        transform: rotate(-32deg);
+        top: 2px;
+        right: 1px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .burger_btn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo{
+        margin: 0;
+        &__img {
+            width: 80%;
+        }
+    }
+    
+
+    .header__search{
+        &_input{
+        height: 70%;
+    }
+    &_button{
+        padding: 7px;
+    }
+}
+
+.burger_btn{
+    left: 15px;
+}
+
+.cart__icon{
+    right: 25px;
+}
+}
